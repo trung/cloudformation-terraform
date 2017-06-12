@@ -248,10 +248,16 @@
       "Type" : "AWS::ElasticLoadBalancingV2::LoadBalancer",
       "Properties" : {
         "Subnets" : { "Ref" : "Subnets"},
-        "Tags" : {
-          "sid" : "f413852",
-          "by" : "cf"
-        }
+        "Tags" : [
+          {
+            "Key" : "sid",
+            "Value" : "f413852"
+          },
+          {
+            "Key" : "by",
+            "Value" : "cf"
+          }
+        ]
       }
     },
 
@@ -284,10 +290,16 @@
           { "Key" : "stickiness.type", "Value" : "lb_cookie" },
           { "Key" : "stickiness.lb_cookie.duration_seconds", "Value" : "30" }
         ],
-        "Tags" : {
-          "sid" : "f413852",
-          "by" : "cf"
-        }
+        "Tags" : [
+          {
+            "Key" : "sid",
+            "Value" : "f413852"
+          },
+          {
+            "Key" : "by",
+            "Value" : "cf"
+          }
+        ]
       }
     },
 
@@ -300,10 +312,16 @@
           {"IpProtocol" : "tcp", "FromPort" : "22", "ToPort" : "22", "CidrIp" : { "Ref" : "SSHLocation"}}
         ],
         "VpcId" : { "Ref" : "VpcId" },
-        "Tags" : {
-          "sid" : "f413852",
-          "by" : "cf"
-        }
+        "Tags" : [
+          {
+            "Key" : "sid",
+            "Value" : "f413852"
+          },
+          {
+            "Key" : "by",
+            "Value" : "cf"
+          }
+        ]
       }
     },
 
@@ -460,10 +478,16 @@
           "EC2SecurityGroupId": { "Ref": "WebServerSecurityGroup" }
         },
         "GroupDescription": "database access",
-        "Tags" : {
-          "sid" : "f413852",
-          "by" : "cf"
-        }
+        "Tags" : [
+          {
+            "Key" : "sid",
+            "Value" : "f413852"
+          },
+          {
+            "Key" : "by",
+            "Value" : "cf"
+          }
+        ]
       }
     },
 
@@ -478,10 +502,16 @@
         "DBInstanceClass"   : { "Ref" : "DBClass" },
         "AllocatedStorage"  : { "Ref" : "DBAllocatedStorage" },
         "DBSecurityGroups": [ { "Ref" : "DBSecurityGroup" } ],
-        "Tags" : {
-          "sid" : "f413852",
-          "by" : "cf"
-        }
+        "Tags" : [
+          {
+            "Key" : "sid",
+            "Value" : "f413852"
+          },
+          {
+            "Key" : "by",
+            "Value" : "cf"
+          }
+        ]
       }
     }
   },
