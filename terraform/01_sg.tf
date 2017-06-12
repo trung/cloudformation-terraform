@@ -1,5 +1,5 @@
 resource "aws_security_group" "WebServerSecurityGroup" {
-  name = "WebServerSecurityGroup"
+  name = "tf-WebServerSecurityGroup"
   vpc_id = "${var.VpcId}"
 
   ingress {

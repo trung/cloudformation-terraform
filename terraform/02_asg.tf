@@ -1,5 +1,5 @@
 resource "aws_autoscaling_group" "WebServerGroup" {
-  name = "asg-WebServerGroup"
+  name = "tf-asg-WebServerGroup"
   launch_configuration = "${aws_launch_configuration.LaunchConfig.name}"
   vpc_zone_identifier = ["${var.Subnets}"]
   max_size = 2
